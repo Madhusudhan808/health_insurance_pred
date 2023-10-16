@@ -18,6 +18,17 @@ python model.py
 ```
 This would create a serialized version of our model into a file model.pkl
 
+## Machine Learning Model Containerization
+
+1. Make sure you have Docker installed on your system.
+
+2. Clone this repository.
+
+3. Build the Docker image with this command:
+   ```bash
+   docker build -t my-ml-app:1.0 .
+
+
 2. Run app.py using below command to start Flask API
 ```
 python app.py
@@ -39,3 +50,6 @@ Run the beow command to send the request with some pre-popuated values -
 ```
 python request.py
 ```
+# cloudplatform deploy 
+cloud builds sumbit --tag gcr.io/deploy-turnkey-chimera-402206/predict
+gcloud run deploy --image gcr .io/deploy-turnkey-chimera-402206/predict --platform managed
